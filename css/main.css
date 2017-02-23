@@ -1,0 +1,72 @@
+body{
+	margin:0.5%;font-size: 18px;background:skyblue;font-family: tahoma;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+	margin:0;padding: 0
+}
+li{
+  list-style:none
+}
+
+header{
+	background:grey;color:black;text-align: center;padding: 1%;
+}
+.menubar{
+  background:skyblue;padding:0;margin-bottom:0.1%;
+}
+.menubar ul{
+    display:flex;flex-direction:row;flex-flow: row;
+  }
+		.menubar ul li{
+			margin: 1%;display: flex;flex-direction: row;justify-content: space-around;background:white;flex: 1 auto;
+	}
+	.menubar ul li ul{
+		display: none;
+	}
+	.menubar ul li ul;{
+  display: flex;flex-direction: row;  margin:0.5%;padding:1%;background:lightyellow;text-align: center; flex: 1 auto; position: absolute;width: 35%;
+	}
+	.menubar ul li:hover ul{
+		display: block; margin: 1% 0 0 0; background: blue;
+	}
+		.menubar ul li:hover ul li{
+			color:green;
+		}
+section{
+  background:white;padding:1%;display:flex;flex-flow:row norowrap;
+  justify-content:space-around
+}
+section article{
+  background:lightgreen;width:35%;padding:3%;
+}
+section article h3{
+  background:blue;color:white;padding:3% 5%;text-align:center
+}
+section article p{
+  margin-top:3%;text-align:justify
+}
+footer{
+  background:lightpink;color:black:padding:3%;display:flex;flex-flow:row norowrap;justify-content:space-around
+}
+footer article{
+  background:lightgreen;color:black;padding:2% 3%;
+}
+@media all and (max-width:600px){
+	.menubar ul, section, footer{
+		flex-direction:column;
+		width:98%;
+	}
+		section article{
+			width:98%;
+		}
+
+		footer article{
+			width:98%;
+			border-bottom:4px solid red;
+		}
+		footer article:last-child{
+			border:none;
+		}
+
+
+}
