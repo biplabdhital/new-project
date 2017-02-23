@@ -27,7 +27,7 @@ header{
   display: flex;flex-direction: row;  margin:0.5%;padding:1%;background:lightyellow;text-align: center; flex: 1 auto; position: absolute;width: 35%;
 	}
 	.menubar ul li:hover ul{
-		display: block; margin: 1% 0 0 0; background: blue;
+		display: block; margin: 1% 0 0 0; background: blue;text-align:center;
 	}
 		.menubar ul li:hover ul li{
 			color:green;
